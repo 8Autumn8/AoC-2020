@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 import java.util.*;
 import java.lang.Math; 
 
+//TAKES FOREVER TO RUN
+
 class Main {
   private static List<Integer> value = new ArrayList<Integer>();
   public static void main(String[] args) {
