@@ -1,0 +1,32 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    List<Integer> arrayList = new ArrayList<Integer>();
+    Scanner scanner = new Scanner(System.in); 
+    while(scanner.hasNextInt())
+    {
+      int i = scanner.nextInt(); 
+      arrayList.add(i);
+    }
+    System.out.println(arrayList);
+    for (int i = 0; i < arrayList.size(); i++){
+      for (int j = i+ 1; j < arrayList.size(); j++){
+        for (int k = j + 1; k < arrayList.size(); k++){
+          if ((int) arrayList.get(i) + (int) arrayList.get(j) + (int) arrayList.get(k)  == 2020){
+            System.out.println("num 1: " + arrayList.get(i) + " num 2: " + arrayList.get(j) + " num 3: " + arrayList.get(k));
+          }
+        }
+      }
+    } 
+
+
+    for (int i = 0; i < arrayList.size(); i++){
+      for (int j = i+ 1; j < arrayList.size(); j++){
+        if ((int) arrayList.get(i) + (int) arrayList.get(j) == 2020){
+          System.out.println("num 1: " + arrayList.get(i) + " num 2: " + arrayList.get(j) );
+        }
+      }
+    }       
+  }
+}
